@@ -73,6 +73,12 @@ section#map {
 	border-left: none;
 	border-right: 0;
 }
+section#map iframe {
+	width: 100%;
+	height: 580px;
+	top: 0;
+	left: 0;
+}
 
 section#timetable {
 	margin-top: 8rem;

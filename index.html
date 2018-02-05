@@ -119,8 +119,8 @@ Add your own background image
                                 <h1>INGRESS<br><span>MISSION DAY </span>Alcalá de Henares</h1>
                                 <p>Agents, we want to discover Alcalá de Henares on Saturday 02/17/2018. We will provide you <strong><span> high quality </span></strong>missions to explore the city on foot together. Sign up to receive more information soon. </p>
                                 <div class="banner-buttons">
-                                    <a href="#missions" class="button-default button-md">Our Missions</a>
-                                    <a href="#timetable" class="button-default button-md visibile-xs">TimeTable</a> <!-- only mobile thanks to visibile-xs but change if you like -->
+                                    <a href="https://alcalamd.eventrbrite.es" class="button-default button-md">Register</a>
+                                    <a href="#missions" class="button-default button-md visibile-xs">Our Missions</a> <!-- only mobile thanks to visibile-xs but change if you like -->
                                 </div>
                             </div>
                         </div>
@@ -206,7 +206,9 @@ https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko
 
 <!-- DYNAMIC MISSIONDAY MAP - will be populated with an javascript -->
 <section id="map" class="hidden-xs">
-    <div class="map"></div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1PE4YquQUj9lY31Dp1FgT3grdG-17zg11"></iframe>
+    </div>
 </section>
 
 <!-- // map -->
@@ -465,7 +467,7 @@ function initialize() {
             })(marker, i));
         }
     }
-    google.maps.event.addDomListener(window, 'load', initialize);
+    //google.maps.event.addDomListener(window, 'load', initialize);
  </script>
 
 <script>
