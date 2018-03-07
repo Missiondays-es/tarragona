@@ -72,9 +72,9 @@
             <div id="main-menu" class="sticker" style="opacity: 1;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-2 ">
+                        <div class="col-lg-4 col-md-2">
                             <div class="logo">
-                                <a href="/"><img src="assets/img/md-logo.png" class="mdlogo" alt="Missionday"></a>
+                                <a href="/"><img src="assets/img/md-logo.png" class="mdlogo" alt="Missionday"></a><br>
 
                             </div>
                         </div>
@@ -87,6 +87,9 @@
                                         <li class=""><a href="#missions">Mission Map</a></li>
                                        <li><a href="#timetable">Timetable</a></li>
                                        <li><a href="https://plus.google.com/communities/110559728913363113324">G+ community</a></li>
+										<li><a href="https://tarragona.missionday.es/index_es.html">Castellano</a></li>
+										<li><a href="https://tarragona.missionday.es/index_ca.html">Català</a></li>
+
                                     </ul>
                                 </nav>
                             </div>
@@ -432,13 +435,14 @@ https://www.google.com/maps/d/viewer?mid=11SksJmgINlqaGuzc1eLbRAGRHko
     return "";
  }
  
+
  
  
- if(getFirstBrowserLanguage().toLowerCase().indexOf("ca") !== -1) {
-	 window.location = "http://tarragona.missionday.es/index_ca.html";
+ if(getFirstBrowserLanguage().toLowerCase().indexOf("es") !== -1) {
+	  if(confirm("Hemos detectado que utilizas el castellano como idioma, ¿deseas ir a la página en español?")) window.location = "http://tarragona.missionday.es/index_es.html";
   } else {
-	 if(getFirstBrowserLanguage().toLowerCase().indexOf("es") !== -1) {
-		 window.location = "http://tarragona.missionday.es//index_es.html";
+	 if(getFirstBrowserLanguage().toLowerCase().indexOf("ca") !== -1) {
+		if(confirm("Hem detectat que fas servir el català, vols canviar a la plana en català?"))  window.location = "http://tarragona.missionday.es/index_ca.html";
 	 } 
 }	 
 
